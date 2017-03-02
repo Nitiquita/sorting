@@ -8,11 +8,11 @@ describe('Bubble Sort', function(){
 	it('handles multiple items', function(){
 		expect( bubbleSort('elem1', 25, ['grace', 'hopper']) ).toEqual('elem1', 25, ['grace', 'hopper'])
 	});
-};
+});
 
 before(function () {
 	spyOn(swap).and.callThrough();
 });
 it ('counts the number of swaps', function() {
-	expect(swap.)
+	expect(swap)
 })

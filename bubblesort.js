@@ -1,10 +1,14 @@
-function bubbleSort(array, comparison) {
+function bubbleSort(array) {
 
 	for (var i=0; i<array.length; i++) {
-		if(comparison(arr[i], arr[i+1])) {
-			swap(arr[i], arr[i+1]);
+		if(array[i] > array[i+1]) {
+			swap(array[i], array[i+1]);
 		}
 	}
+
+return array;
+
+}
 
 
 function swap(elem1, elem2) {
@@ -12,11 +16,9 @@ function swap(elem1, elem2) {
 	var idx2 = array.indexOf(elem2);
 	array[idx1] = elem2;
 	array[idx2] = elem1;
-}	
-
-return array;
-
 }
+
+function comparison(elem1, elem2)
 
 
 
