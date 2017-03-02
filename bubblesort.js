@@ -1,7 +1,7 @@
-function bubbleSort(array, comparisonFunc) {
+function bubbleSort(array, comparison) {
 
 	for (var i=0; i<array.length; i++) {
-		if(comparisonFunc(arr[i], arr[i+1])) {
+		if(comparison(arr[i], arr[i+1])) {
 			swap(arr[i], arr[i+1]);
 		}
 	}
@@ -13,6 +13,8 @@ function swap(elem1, elem2) {
 	array[idx1] = elem2;
 	array[idx2] = elem1;
 }	
+
+return array;
 
 }
 
